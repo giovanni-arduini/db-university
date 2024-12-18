@@ -38,3 +38,7 @@ WHERE `phone` IS NULL
 <!-- Inserire nella tabella studenti un nuovo record con i propri dati -->
 
 INSERT INTO `university`.`students` (`id`, `degree_id`, `name`, `surname`, `date_of_birth`, `fiscal_code`, `enrolment_date`, `registration_number`, `email`) VALUES ('69696', '3', 'Giovanni', 'Arduini', '1991-04-20', 'RDNGNN91D20F205V', '2010-08-29', '743099', 'g.arduini@lollo.com');
+
+<!-- cambiare il numero di ufficio del prof. Pietro Rizzo in 126 -->
+
+UPDATE `university`.`teachers` SET `office_number` = '126' WHERE (`id` = '58');
