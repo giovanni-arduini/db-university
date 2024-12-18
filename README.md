@@ -42,3 +42,7 @@ INSERT INTO `university`.`students` (`id`, `degree_id`, `name`, `surname`, `date
 <!-- cambiare il numero di ufficio del prof. Pietro Rizzo in 126 -->
 
 UPDATE `university`.`teachers` SET `office_number` = '126' WHERE (`id` = '58');
+
+<!-- eliminare dalla tabella studenti il proprio record -->
+
+DELETE FROM `university`.`students` WHERE (`id` = '5001');
