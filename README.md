@@ -13,3 +13,9 @@ WHERE `cfu` > 10
 SELECT \* FROM `courses`
 WHERE `year` = 1
 AND `period` LIKE "I semestre"
+
+<!-- selezionare esami dopo le 14:00 il giorno 20/06/2020 -->
+
+SELECT \* FROM `exams`
+WHERE `date` = "2020/06/20"
+AND `hour` >= "14:00:00"
