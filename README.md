@@ -19,3 +19,8 @@ AND `period` LIKE "I semestre"
 SELECT \* FROM `exams`
 WHERE `date` = "2020/06/20"
 AND `hour` >= "14:00:00"
+
+<!-- selezionare tutti i corsi di laurea magistrale -->
+
+SELECT \* FROM `degrees`
+WHERE `level` = "magistrale"
