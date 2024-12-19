@@ -19,3 +19,13 @@ SELECT \*
 FROM `courses`
 LEFT JOIN `teachers`
 ON `teachers`.`id` = 44
+
+<!-- Selezionare tutti gli studenti-corsi-dipartimenti in ordine alfabetico per cognome -->
+
+SELECT \*
+FROM `students`
+LEFT JOIN `degrees`
+ON `degrees`.`id` = `students`.`degree_id`
+LEFT JOIN `departments`
+ON `departments`.`id` = `degrees`.`department_id`
+ORDER BY `students`.`surname`ASC
