@@ -8,6 +8,12 @@ WHERE `date_of_birth` LIKE "1990-%"
 SELECT \* FROM `courses`
 WHERE `cfu` > 10
 
+<!-- selezionare tutti gli studenti che hanno più di trent'anni -->
+
+SELECT \* , TIMESTAMPDIFF(YEAR, `date_of_birth`, CURDATE()) AS `anni`
+FROM `students`
+WHERE TIMESTAMPDIFF(YEAR, `date_of_birth`, CURDATE()) > 30;
+
 <!-- selezionare tutti i corsi del primo semestre del primo anno  -->
 
 SELECT \* FROM `courses`
